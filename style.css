@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#imagePreview {
+    margin-top: 20px;
+}
+
+#imagePreview img {
+    max-width: 100%;
+}
+
+#removeBackgroundBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-download {
+    padding: 10px 30px;
+    color: red;
+    background: #4caf50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

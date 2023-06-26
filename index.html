@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Image Background Remover</title>
+   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+   <link rel="stylesheet" href="major.css">
+   <style>
+        input[type=file] {
+            color: #999;
+        }
+
+        input[type=file]::file-selector-button {
+        border: 2px solid rgb(31, 41, 55);
+        padding: 5px 15px;
+        border-radius: 4px;
+        color: #888;
+        background: rgb(31, 41, 55);
+        cursor: pointer;
+        font-size: 15px;
+        transition: .4s ease;
+        }
+
+        input[type=file]::file-selector-button:hover {
+        background-color: #1E40AF;
+        border: 2px solid #1E40AF;
+        color: white;
+        }
+   </style>
+</head>
+<body class="bg-gray-800 flex h-screen items-center content-center">
+   <div class="container bg-slate-700 h-auto max-w-xl mx-auto rounded-md shadow-md p-5">
+       <h1 class="text-3xl font-semibold mb-7 text-gray-400">Image Background Remover</h1>
+       <input type="file" id="imageUpload" accept="image/*" class="flex">
+       <div id="imagePreview" class="mt-4"></div>
+       <div>
+        <button id="removeBackgroundBtn" class="bg-blue-800 p-2 mt-4 rounded-md text-sm text-slate-400 mr-4 hover:bg-blue-900">Remove Background</button>
+       <a id="downloadBtn" download="processed_image.png"><button class="bg-gray-800 p-2 mt-4 rounded-md text-sm text-slate-400">Download Processed Image</button></a>
+       </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
